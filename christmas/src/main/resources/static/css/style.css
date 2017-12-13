@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+#frontcover{
+	 background-image: url("present.png");
+	 background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#secondcover{
+	 background-image: url("greychristmas.jpg");
+	 background-repeat: no-repeat;
+    background-size: cover;
+}
