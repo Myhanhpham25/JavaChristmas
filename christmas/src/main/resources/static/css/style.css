@@ -1,6 +1,11 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 
+img{
+	width: 300px;
+	height: 300px;
+}
 #frontcover{
 	 background-image: url("present.png");
 	 background-repeat: no-repeat;
@@ -12,3 +17,124 @@
 	 background-repeat: no-repeat;
     background-size: cover;
 }
+
+        
+.scrollbox {
+	color: black;
+	width: auto;
+    height: 250px;
+    overflow: scroll;
+    background-color: #e6e6e6;
+}
+
+
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    /*     h1, h3  {
+            color:#91ac27;
+            text-align: center;
+            font-family: 'Courier','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        } */
+        #strobe{
+            font-family: "Calibri", "Courier New";
+            letter-spacing: 2px;
+            color: #474bfc;
+            text-align: center;
+            font-weight: 700;
+            animation: blur .5s ease-out infinite;
+            text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+        }
+        @keyframes blur {
+        from {
+            text-shadow:0px 0px 10px #fff,
+            0px 0px 10px #474bfc, 
+            0px 0px 25px #474bfc,
+            0px 0px 25px #474bfc,
+            0px 0px 25px #474bfc,
+            0px 0px 25px #474bfc,
+            0px 0px 25px #474bfc,
+            0px 0px 25px #474bfc,
+            0px 0px 50px #474bfc,
+            0px 0px 50px #474bfc,
+            0px 0px 50px #6e72f3,
+            0px 0px 150px #7276ee,
+            0px 10px 100px #7c80ee,
+            0px 10px 100px #999cf0,
+            0px 10px 100px #a1a3ec,
+            0px 10px 100px #bbbcf5,
+            0px -10px 100px #dcddf7,
+            0px -10px 100px #f3f3f7;
+        }
+        }
+        .wrapping{
+     
+            width: 100%;
+            
+        }
+        /* This can be used to align collapsed navbar items
+        .navbar-collapse {
+        text-align:left;
+        } */
+        /* This can be used to center align navbar items
+        .navbar-nav {
+            float:none;
+            margin:0 auto;
+            display: block;
+            text-align: center;
+        } */
+        .navbar-nav > li {
+            display: inline-block;
+            float:none;  
+            
+        }
+        .left{
+            margin: 15px;
+        }
+        .middle{
+            margin: 15px;
+        }
+        .right{
+            margin: 15px;
+        }
+        #shows{
+            color: #474bfc;
+            font-family: "Georgia","Consolas", "Garmond", "Times New Roman";
+            margin-top: 0px;
+        }
+        
+        p{
+            color: rgb(7, 7, 6);
+        }
+        .event_container{
+            /* background-color for systems not supporting gradients */
+            background-color: black;
+            background: linear-gradient(black, #474bfc, #91ac27);
+        }
+        .caption{
+            background-color: black;
+        }
+        .captext{
+            color: white;
+            text-align: center;
+            font-family: "Trebuchet MS","Garamond","Palatino";
+            font-size: 17px;
+        }
+        .branding{
+            color: #91ac27;
+        }
+        .footer_container{
+            background: linear-gradient(#91ac27, black);
+            padding-bottom: 30px;
+            text-align: right;
+            padding-right: 15px;
+        }
+        
+        #carouselExampleIndicators{
+            max-width: 960px; 
+        }
+        
+        
+        body{
+         margin-left: 20px;
+         padding: 20px
+         }

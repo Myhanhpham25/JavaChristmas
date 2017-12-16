@@ -3,6 +3,7 @@ package com.hanh.christmas.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -14,7 +15,6 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.Size;
-
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -48,9 +48,11 @@ public class User {
 	private Date createdAt;
 	private Date updatedAt;
 
-	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
 	private List<Potluck> potlucks;
 
+	private Boolean status=false;
+	
 	public User() {
 	}
 
@@ -117,6 +119,15 @@ public class User {
 	public void setPotlucks(List<Potluck> potlucks) {
 		this.potlucks = potlucks;
 	}
+	
+
+	public Boolean getStatus() {
+		return status;
+	}
+
+	public void setStatus(Boolean status) {
+		this.status = status;
+	}
 
 	@PrePersist
 	protected void onCreate() {
@@ -127,4 +138,5 @@ public class User {
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
+
 }

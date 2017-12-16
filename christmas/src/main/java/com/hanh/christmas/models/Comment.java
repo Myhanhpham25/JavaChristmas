@@ -23,7 +23,7 @@ public class Comment {
 
 	@NotBlank
 	@Size(min = 3, message = "Comment must be at least 3 characters long.")
-	private String comment;
+	private String message;
 
 	@NotBlank
 	@Size(min = 1)
@@ -33,7 +33,6 @@ public class Comment {
 	private Date createdAt;
 	private Date updatedAt;
 
-
 	public Long getId() {
 		return id;
 	}
@@ -42,12 +41,12 @@ public class Comment {
 		this.id = id;
 	}
 
-	public String getComment() {
-		return comment;
+	public String getMessage() {
+		return message;
 	}
 
-	public void setComment(String comment) {
-		this.comment = comment;
+	public void setMessage(String message) {
+		this.message = message;
 	}
 
 	public String getName() {
